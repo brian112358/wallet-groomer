@@ -19,6 +19,12 @@ server=1
 
 ## Usage:
 
+First, you will need to unlock your wallet. You can do this in the Debug Console by typing:
+
+`walletpassphrase password 300`
+
+Replace `password` with your wallet password. `300` is the number of seconds the wallet should stay unlocked for; you will need to finish running the tool within that time (feel free to change it if you'd like).
+
 You should be able to simply run:
 
 `python2 groomer.py http://user:password@127.0.0.1:8766`
@@ -27,7 +33,7 @@ You should be able to simply run:
 
 ## Optional Arguments
 
-Normally, there should be no need to use any of the optional arguments. Simply run `python2 groomer.py -h` to get the help page:
+Normally, there should be no need to use any of the optional arguments. If you're having trouble with the tool, you can run `python2 groomer.py -h` to get the help page:
 
 ```
 usage: groomer.py [-h] [-i MAX_AMT_INPUT] [-n MAX_NUM_TX]
